@@ -2,6 +2,7 @@ import os
 import ipinfo
 import pprint
 from colorama import Fore, Style, init
+import pyfiglet
 
 # Inicializar colorama
 init()
@@ -18,6 +19,9 @@ def scan_ip():
         print(f"{Fore.RED}La variable de entorno IPINFO_API_TOKEN no está configurada.{Style.RESET_ALL}")
         return
     
+    ascii_art = pyfiglet.figlet_format('MANGO')
+    print(f"{Fore.GREEN}{ascii_art}{Style.RESET_ALL}")
+
     ip_address = input(f"{Fore.MAGENTA}Por favor, ingresa la dirección IP: {Fore.RESET}")
 
     details_all = get_ip_details(api_token, ip_address)
