@@ -39,6 +39,7 @@ git clone https://github.com/BashMagno/ipInfo
 cd ipInfo
 pip install -r requirements.txt
 python3 ipInfobyMango.py
+
 ``` 
 **Forma detallada**
 1. Copiamos el repositorio a nuestro equipo local.
